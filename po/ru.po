@@ -25,10 +25,10 @@ msgid "Celsius"
 msgstr "Цельсий"
 
 msgid "Choose the icon set. You need to create an additional set here: /usr/share/enigma2/WeatherIconSets/NAME."
-msgstr ""
+msgstr "Выберите набор значков. Здесь необходимо создать дополнительный набор: /usr/share/enigma2/WeatherIconSets/NAME."
 
 msgid "Choose whether the 'night switch' should be activated or not. Some icons are then displayed as night icons with moon."
-msgstr ""
+msgstr "Выберите, следует ли активировать «ночной переключатель» или нет. Некоторые значки затем отображаются как ночные значки с луной."
 
 #, python-format
 msgid "City '%s' not found! Please try another wording."
@@ -74,10 +74,10 @@ msgid "Fahrenheit"
 msgstr "Фаренгейт"
 
 msgid "Feels like"
-msgstr ""
+msgstr "Как будто"
 
 msgid "Humidity"
-msgstr ""
+msgstr "Влажность"
 
 msgid "Location Selection"
 msgstr "Местоположение"
@@ -101,7 +101,7 @@ msgid "OpenWeatherMap"
 msgstr "Открыть карту погоды"
 
 msgid "Precipitation"
-msgstr ""
+msgstr "Атмосферные осадки"
 
 msgid "Refresh interval"
 msgstr "Интервал обновления"
@@ -136,7 +136,7 @@ msgid "Set default values"
 msgstr "Установить значения по умолчанию"
 
 msgid "Show Weather Forecast"
-msgstr ""
+msgstr "Показать прогноз погоды"
 
 msgid "South"
 msgstr "Юг"
@@ -167,10 +167,10 @@ msgid "The city name is too short. More than 2 characters are needed for search.
 msgstr "Название города слишком короткое. Для поиска необходимо более 2 символов."
 
 msgid "Today"
-msgstr ""
+msgstr "Сегодня"
 
 msgid "Update"
-msgstr ""
+msgstr "Обновлять"
 
 msgid "Weather API key"
 msgstr "Ключ API MetrixWeather"
@@ -203,4 +203,4 @@ msgid "West"
 msgstr "Запад"
 
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
