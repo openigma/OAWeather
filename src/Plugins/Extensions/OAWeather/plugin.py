@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-# Copyright (C) 2024 jbleyel, Mr.Servo, Stein17
+# Copyright (C) 2023 jbleyel, Mr.Servo, Stein17
 #
 # OAWeather is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,37 +12,41 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with OAWeather.  If not, see <http://www.gnu.org/licenses/>.
-#
+
 # Some parts are taken from MetrixHD skin and MSNWeather Plugin.
 
+from __future__ import print_function
+from Components.ActionMap import ActionMap, HelpableActionMap
+from Components.ConfigList import ConfigListScreen
+from Components.Label import Label
+from Components.MenuList import MenuList
+from Components.Sources.StaticText import StaticText
+from Components.config import ConfigSubsection, ConfigYesNo, ConfigSelection, ConfigSelectionNumber, ConfigText
+from Components.config import config
+from Components.config import configfile, ConfigEnableDisable, ConfigYesNo, ConfigInteger
+from Components.config import getConfigListEntry
+from Plugins.Plugin import PluginDescriptor
+# from Screens.ChoiceBox import ChoiceBox
+from Screens.MessageBox import MessageBox
+from Screens.Screen import Screen
+from Screens.Setup import Setup
+from Screens.VirtualKeyBoard import VirtualKeyBoard
+from Tools.Weatherinfo import Weatherinfo
+from datetime import datetime
+from enigma import eTimer
+from keymapparser import readKeymap, removeKeymap
+from os import remove
 from os import remove, listdir
 from os.path import isfile, exists, getmtime, join
 from pickle import dump, load
 from time import time
 from twisted.internet.reactor import callInThread
 from xml.etree.ElementTree import tostring, parse
-from Components.ConfigList import ConfigListScreen
-from Components.MenuList import MenuList
-from Components.config import config
-from enigma import eTimer
-from Components.ActionMap import ActionMap, HelpableActionMap
-from Components.config import ConfigSubsection, ConfigYesNo, ConfigSelection, ConfigSelectionNumber, ConfigText, getConfigListEntry, configfile, ConfigEnableDisable, ConfigYesNo, ConfigInteger
-from Components.Label import Label
-from Components.Sources.StaticText import StaticText
-from Plugins.Plugin import PluginDescriptor
-from Screens.ChoiceBox import ChoiceBox
-from Screens.Setup import Setup
-from Screens.Screen import Screen
-from Screens.MessageBox import MessageBox
-from Tools.Weatherinfo import Weatherinfo
-from Screens.VirtualKeyBoard import VirtualKeyBoard
 import skin
 from . import _
 import sys
-from keymapparser import readKeymap, removeKeymap
-from Components.config import getConfigListEntry
-from Components.Button import Button
-#from Components.List import List
+
+# from Components.List import List
 
 
 if sys.version_info[0] >= 3:
