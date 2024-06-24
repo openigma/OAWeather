@@ -16,61 +16,35 @@
 #
 # Some parts are taken from MetrixHD skin and MSNWeather Plugin.
 
+from os import remove, listdir
+from os.path import isfile, exists, getmtime, join
+from pickle import dump, load
+from time import time
+from twisted.internet.reactor import callInThread
+from xml.etree.ElementTree import tostring, parse
+from Components.ConfigList import ConfigListScreen
+from Components.MenuList import MenuList
+from Components.config import config
+from enigma import eTimer
 from Components.ActionMap import ActionMap, HelpableActionMap
-from Components.Button import Button
-from Components.config import config
 from Components.config import ConfigSubsection, ConfigYesNo, ConfigSelection, ConfigSelectionNumber, ConfigText, getConfigListEntry, configfile, ConfigEnableDisable, ConfigYesNo, ConfigInteger
-from Components.config import getConfigListEntry
-from Components.ConfigList import ConfigListScreen
 from Components.Label import Label
-from Components.MenuList import MenuList
 from Components.Sources.StaticText import StaticText
-from enigma import eTimer
+from Plugins.Plugin import PluginDescriptor
+from Screens.ChoiceBox import ChoiceBox
+from Screens.Setup import Setup
+from Screens.Screen import Screen
+from Screens.MessageBox import MessageBox
+from Tools.Weatherinfo import Weatherinfo
+from Screens.VirtualKeyBoard import VirtualKeyBoard
+import skin
 from . import _
-from keymapparser import readKeymap, removeKeymapfrom Components.ActionMap import ActionMap, HelpableActionMap
-from Components.Button import Button
-from Components.config import config
-from Components.config import  ConfigSubsection, ConfigYesNo, ConfigSelection, ConfigSelectionNumber, ConfigText, getConfigListEntry, configfile, ConfigEnableDisable, ConfigYesNo, ConfigInteger
-from Components.config import getConfigListEntry
-from Components.ConfigList import ConfigListScreen
-from Components.Label import Label
-from Components.MenuList import MenuList
-from Components.Sources.StaticText import StaticText
-from enigma import eTimer
-from . import _
+import sys
 from keymapparser import readKeymap, removeKeymap
-from os import remove, listdir
-from os.path import isfile, exists, getmtime, join
-from pickle import dump, load
-from Plugins.Plugin import PluginDescriptor
-from Screens.ChoiceBox import ChoiceBox
-from Screens.MessageBox import MessageBox
-from Screens.Screen import Screen
-from Screens.Setup import Setup
-from Screens.VirtualKeyBoard import VirtualKeyBoard
-from time import time
-from Tools.Weatherinfo import Weatherinfo
-from twisted.internet.reactor import callInThread
-from xml.etree.ElementTree import tostring, parse
-import skin
-import sys
-from os import remove, listdir
-from os.path import isfile, exists, getmtime, join
-from pickle import dump, load
-from Plugins.Plugin import PluginDescriptor
-from Screens.ChoiceBox import ChoiceBox
-from Screens.MessageBox import MessageBox
-from Screens.Screen import Screen
-from Screens.Setup import Setup
-from Screens.VirtualKeyBoard import VirtualKeyBoard
-from time import time
-from Tools.Weatherinfo import Weatherinfo
-from twisted.internet.reactor import callInThread
-from xml.etree.ElementTree import tostring, parse
-import skin
-import sys
-
+from Components.config import getConfigListEntry
+from Components.Button import Button
 #from Components.List import List
+
 
 if sys.version_info[0] >= 3:
 
