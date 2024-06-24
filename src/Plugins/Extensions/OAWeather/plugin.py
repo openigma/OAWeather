@@ -115,9 +115,9 @@ config.plugins.OAWeather.weathercity = ConfigText(default=GEODATA[0], visible_wi
 config.plugins.OAWeather.owm_geocode = ConfigText(default=GEODATA[1])
 config.plugins.OAWeather.tempUnit = ConfigSelection(default="Celsius", choices=[("Celsius", _("Celsius")), ("Fahrenheit", _("Fahrenheit"))])
 config.plugins.OAWeather.weatherservice = ConfigSelection(default="MSN", choices=[("MSN", _("MSN weather")), ("OpenMeteo", _("Open-Meteo Wetter")), ("openweather", _("OpenWeatherMap"))])
+
 #config.plugins.OAWeather.weatherservice = ConfigSelection(default="MSN", choices=[("MSN")])
 config.plugins.OAWeather.debug = ConfigYesNo(default=False)
-
 USELOGFILE = config.plugins.OAWeather.debug
 
 if USELOGFILE.value:
@@ -175,14 +175,13 @@ class WeatherSettingsViewNew(ConfigListScreen, Screen):
         self.list.append(getConfigListEntry(_("Refresh interval :"), config.plugins.OAWeather.refreshInterval))
         self.list.append(getConfigListEntry(_("Cache data :"), config.plugins.OAWeather.cachedata))
         self.list.append(getConfigListEntry(_("Enable Debug :"), config.plugins.OAWeather.debug))
-
         #logout(data=str(self.list))
         ConfigListScreen.__init__(self, self.list, session=session)
-
         self["key_green"] = StaticText(_("Save"))
         #self["key_blue"] = StaticText(_("Location Selection"))
         self["key_yellow"] = StaticText(_("Defaults"))
         self["key_red"] = StaticText(_("Location Selection"))
+
         self["blueActions"] = HelpableActionMap(self, ['ColorActions', 'OkCancelActions', 'OAWeatherActions'],
         #self["blueActions"] = ActionMap(self, ["OkCancelActions',ColorActions"],
         #self['actions'] = ActionMap(['OkCancelActions', 'ColorActions'],
@@ -242,9 +241,7 @@ class WeatherSettingsViewNew(ConfigListScreen, Screen):
         weathercity = config.plugins.OAWeather.weathercity.value.split(",")[0]
         logout(data="--------------------------  weatherCity")
         logout(data=str(weathercity))
-
         #self.["footnote"].setText(_("Search for City ID please wait..."))
-
         logout(data="keycheckCity1")
         self.closeonsave = closesave
         logout(data="keycheckCity2")
@@ -345,7 +342,6 @@ class WeatherSettingsViewNew(ConfigListScreen, Screen):
 
         if len(self.selected_city) >= 4:
             parts = self.selected_city.split(',')
-
             city = parts[0]
             longitude =""
             latitude = ""
@@ -845,7 +841,6 @@ class OAWeatherPlugin(Screen):
         forecast = self.data.get("forecast")
         tempunit = self.data.get("tempunit", self.na)
         for day in range(1, 6):
-
             item = forecast.get(day)
             logout(data="item")
             logout(data=str(item))
