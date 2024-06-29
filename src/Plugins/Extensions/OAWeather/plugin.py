@@ -138,7 +138,7 @@ PLUGINPATH = join(resolveFilename(SCOPE_PLUGINS), 'Extensions/OAWeather')
 class WeatherSettingsViewNew(ConfigListScreen, Screen):
     logout(data="WeatherSettingsViewNew")
     skin = """
-    <screen name="WeatherSettingsViewNew" title="Weather Plugin Setup" position="center,30" size="1280,660" backgroundColor="black" transparent="0">
+    <screen name="WeatherSettingsViewNew" title="Weather Plugin Setup" position="center,center" size="1280,660" backgroundColor="black" transparent="0">
     <eLabel position="0,0" size="1280,480" backgroundColor="black" transparent="0" zPosition="0" />
     <widget name="config" position="40,20" size="1200,450" font="Regular;30" itemHeight="45" backgroundColor="black" foregroundColor="white" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
     <widget name="status" font="Regular; 25" position="0,490" size="1280,40" foregroundColor="#fff000" transparent="1" zPosition="3" halign="center" valign="center" />
