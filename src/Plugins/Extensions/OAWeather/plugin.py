@@ -458,7 +458,7 @@ class TestScreen(Screen):
 
         self['key_red'] = Label(_('Exit'))
         logout(data="Testscreen ende")
-        self['status'].setText(_("Select the City and Press OK"))
+        self['status'].setText(_("Select your City and Press OK"))
         # logout(data="Testscreen layout finish")
 
     def selectCity(self):
