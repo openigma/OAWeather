@@ -522,7 +522,7 @@ class WeatherHandler():
             logout(data="WeatherHandler write data 5")
         logout(data="WeatherHandler write data 6")
         seconds = int(config.plugins.OAWeather.refreshInterval.value) * 60
-        logout(data="WeatherHandler write data 7 ------------ secounds")
+        logout(data="WeatherHandler write data 7 ------------ seconds")
         logout(data=str(config.plugins.OAWeather.refreshInterval.value))
         logout(data=str(seconds))
         self.refreshTimer.start(seconds * 1000, True)
