@@ -102,10 +102,10 @@ if exists(ICONSETROOT):
 config.plugins.OAWeather.iconset = ConfigSelection(default="", choices=ICONSETS)
 config.plugins.OAWeather.nighticons = ConfigYesNo(default=True)
 config.plugins.OAWeather.cachedata = ConfigSelection(default="0", choices=[("0", _("Disabled"))] + [(str(x), _("%d Minutes") % x) for x in (30, 60, 120)])
-config.plugins.OAWeather.refreshInterval = ConfigSelectionNumber(5, 1440, 30, default=120, wraparound=True)
+config.plugins.OAWeather.refreshInterval = ConfigSelectionNumber(5, 1440, 30, default=35, wraparound=True)
 config.plugins.OAWeather.apikey = ConfigText(default="", fixed_size=False)
 # GEODATA = ("Hamburg, DE", "10.000654,53.550341")
-GEODATA = ("Frankfurt am Main, DE", "8.68417,50.11552")
+GEODATA = ("Amsterdam, NL", "4.89778,52.37905")
 config.plugins.OAWeather.weathercity = ConfigText(default=GEODATA[0], visible_width=250, fixed_size=False)
 config.plugins.OAWeather.owm_geocode = ConfigText(default=GEODATA[1])
 config.plugins.OAWeather.tempUnit = ConfigSelection(default="Celsius", choices=[("Celsius", _("Celsius")), ("Fahrenheit", _("Fahrenheit"))])
@@ -347,7 +347,7 @@ class WeatherSettingsViewNew(ConfigListScreen, Screen):
         else:
             logout("Die ausgewählte Stadt hat nicht genügend Informationen.")
 
-# 'Frankfurt am Main', '50.11552', '8.68417) ist city - latitude - longitude selfgeodata 1 - dann 2
+# ''Amsterdam', '52.37905', '4.89778) ist city - latitude - longitude selfgeodata 1 - dann 2
 
     def saveGeoCode(self, city, longitude, latitude):
         logout(data="saveGeoCode value ")
@@ -456,9 +456,9 @@ class TestScreen(Screen):
                                         'yellow': self.close,
                                     }, -1)
 
-        self['key_red'] = Label(_('exit'))
+        self['key_red'] = Label(_('Exit'))
         logout(data="Testscreen ende")
-        self['status'].setText(_("Select the City and Press Ok"))
+        self['status'].setText(_("Select your City and Press OK"))
         # logout(data="Testscreen layout finish")
 
     def selectCity(self):
