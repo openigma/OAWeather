@@ -1,4 +1,11 @@
 Package: enigma2-plugin-extensions-oaweather
 Version: 3.0
-Description: Weather component
-Maintainer: jbleyel
+Section: extra
+Priority: optional
+Architecture: all
+Maintainer: jbleyel, me
+Description: Weather component to display Weather in Skins
+Source: enigma2-plugin-extensions-oaweather
+Homepage: https://github.com/oe-alliance/OAWeather
+Depends: enigma2-tools-weatherinfo
+License: GPL-3.0-only
