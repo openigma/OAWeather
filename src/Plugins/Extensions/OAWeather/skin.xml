@@ -149,7 +149,7 @@
     <convert type="ClockToText">Default</convert>
   </widget>
   <!-- Summary -->
-  <ePixmap pixmap="{picpath}/menu.png" position="1228,665" size="50,34" zPosition="3" transparent="1" alphatest="blend" scale="1" />
+  <ePixmap pixmap="{picpath}/menu.png" position="1226,665" size="50,34" zPosition="3" transparent="1" alphatest="blend" scale="1" />
   <widget source="session.OAWeather" render="Pixmap" pixmap="{picpath}/umbrella.png" position="338,202" size="32,32" zPosition="3" transparent="1" alphatest="blend" scale="1">
     <convert type="OAWeather">raintext</convert>
     <convert type="ConditionalShowHide" />
