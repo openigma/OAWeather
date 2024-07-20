@@ -72,6 +72,7 @@ logout(data="start")
     # Funktion implementieren
 #logout(data=str(logstatusin)
 
+
 class OAWeather(Converter, object):
     logout(data="class")
     CURRENT = 0
@@ -148,7 +149,6 @@ class OAWeather(Converter, object):
                         date3_result = str(self.source.getMaxTemp(self.index))
                         logout(data="date3_result: %s" % date3_result)
                         return date3_result
-
 
                     elif self.mode == "temperature_low":
                         logout(data="temperature_low")
