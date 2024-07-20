@@ -410,7 +410,7 @@ class WeatherSettingsViewNew(ConfigListScreen, Screen):
             self.list.append(getConfigListEntry(_("Cache data :"), config.plugins.OAWeather.cachedata))
             self.list.append(getConfigListEntry(_("Enable Debug :"), config.plugins.OAWeather.debug))
             self['config'].setList(self.list)
-            self['status'].setText(_("Standard fertig"))
+            self['status'].setText(_("Default settings restored"))
 
     def setInputToDefault(self, configItem, SAVE):
         configItem.setValue(configItem.default)
