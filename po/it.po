@@ -63,7 +63,7 @@ msgid "Enter the location for your weather forecasts."
 msgstr "Inserisci la posizione per le tue previsioni del tempo."
 
 msgid "Error getting City ID"
-msgstr "Errore in ottenimento ID città"
+msgstr "Errore durante l'ottenimento dell'ID città"
 
 msgid "Error in Weatherinfo"
 msgstr "Errore nelle Informazioni meteo"
@@ -117,7 +117,7 @@ msgid "Select 'Yes' to enable the addition of Weather."
 msgstr "Seleziona 'Si' per abilitare l'aggiunta del Meteo."
 
 msgid "Select Your Location"
-msgstr "Seleziona la propria località"
+msgstr "Seleziona la tua località"
 
 msgid "Select the preferred weather service to supply the weather information."
 msgstr "Seleziona il servizio meteo preferito per fornire le informazioni meteo."
@@ -195,4 +195,4 @@ msgid "West"
 msgstr "Ovest"
 
 msgid "n/a"
-msgstr "n/d"
+msgstr ""
