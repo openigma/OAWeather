@@ -74,10 +74,10 @@ msgid "Fahrenheit"
 msgstr "Фаренгейт"
 
 msgid "Feels like"
-msgstr ""
+msgstr "Ощущается как"
 
 msgid "Humidity"
-msgstr ""
+msgstr "Влажность"
 
 msgid "Location Selection"
 msgstr "Местоположение"
