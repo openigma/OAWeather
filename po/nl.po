@@ -25,7 +25,7 @@ msgid "Celsius"
 msgstr "Celsius"
 
 msgid "Choose the icon set. You need to create an additional set here: /usr/share/enigma2/WeatherIconSets/NAME."
-msgstr "Kies de set iconen. Je moet hier een extra set aanmaken: /usr/share/enigma2/WeatherIconSets/NAME."
+msgstr "Kies iconen set. Je moet hier een extra set aanmaken: /usr/share/enigma2/WeatherIconSets/NAME."
 
 msgid "Choose whether the 'night switch' should be activated or not. Some icons are then displayed as night icons with moon."
 msgstr "Kies of de 'nachtschakelaar' geactiveerd moet worden of niet. Sommige iconen worden dan weergegeven als nachticonen met maan."
@@ -42,7 +42,7 @@ msgid "Default"
 msgstr "Standaard"
 
 msgid "Defaults"
-msgstr "Standaard waarden"
+msgstr "Standaardwaarden"
 
 msgid "Disabled"
 msgstr "Gedeactiveerd"
@@ -57,7 +57,7 @@ msgid "Enabled"
 msgstr "Ingeschakeld"
 
 msgid "Enter a personalized API key for use with OpenWeatherMap (https://openweathermap.org/)."
-msgstr "Voer een gepersonaliseerde API-sleutel in voor gebruik met OpenWeatherMap (https://openweathermap.org/)."
+msgstr "Voer een gepersonaliseerde API-sleutel in om te gebruiken met OpenWeatherMap (https://openweathermap.org/)."
 
 msgid "Enter the location for your weather forecasts."
 msgstr "Voer de locatie in voor uw weersvoorspellingen."
@@ -81,7 +81,7 @@ msgid "Location Selection"
 msgstr "Woonplaats selectie"
 
 msgid "MSN weather"
-msgstr "MSN weer"
+msgstr "MSN Weer"
 
 msgid "North"
 msgstr "Noord"
@@ -117,7 +117,7 @@ msgid "Select 'Yes' to enable add debug output to log."
 msgstr "Kies 'Ja' om het toevoegen van foutopsporingen aan het logboek in te schakelen."
 
 msgid "Select 'Yes' to enable the addition of Weather."
-msgstr "Kies 'Ja' om het Weer aan InfoBar-scherm toe te voegen."
+msgstr "Kies 'Ja' om de toevoeging van het Weer in te schakelen."
 
 msgid "Select Your Location"
 msgstr "Selecteer uw locatie"
@@ -132,7 +132,7 @@ msgid "Select this option to save that last obtained weather data locally. This 
 msgstr "Selecteer deze optie om de laatst opgevraagde weergegevens lokaal op te slaan. Dit wordt gebruikt om de gegevens onmiddellijk na het opnieuw opstarten te initialiseren terwijl er bijgewerkte data wordt opgehaald."
 
 msgid "Set default values"
-msgstr "Standaard waarden instellen"
+msgstr "Standaardwaarden instellen"
 
 msgid "Show Weather Forecast"
 msgstr "Toon weersverwachting"
@@ -158,7 +158,7 @@ msgid ""
 "Otherwise your settings won't be saved."
 msgstr ""
 "De API sleutel voor OpenWeatherMap is niet gedefinieerd of ongeldig.\n"
-"A.u.b. uw opgave controleren.\n"
+"A.u.b. uw ingave controleren.\n"
 "Anders worden uw instellingen niet opgeslagen."
 
 msgid "The city name is too short. More than 2 characters are needed for search."
@@ -198,4 +198,4 @@ msgid "West"
 msgstr "West"
 
 msgid "n/a"
-msgstr "n/a"
+msgstr "n/b"
